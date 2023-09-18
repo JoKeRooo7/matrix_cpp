@@ -240,11 +240,10 @@ void Matrix::AssignMatrixCalcComp(Matrix &smaller_object, int el_rows,
     if (i != el_rows) {
       for (int j = 0, smaller_cols = 0; j < cols_; ++j) {
         if (j != el_cols) {
-          smaller_object.matrix_[smaller_rows][smaller_cols] = matrix_[i][j];
-          smaller_cols++;
+          smaller_object.matrix_[smaller_rows][smaller_cols++] = matrix_[i][j];
         }
       }
-      smaller_rows++;
+      ++smaller_rows;
     }
   }
 }

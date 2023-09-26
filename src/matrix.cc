@@ -276,6 +276,20 @@ double Matrix::operator()(int i, int j) const {
   return matrix_[i][j];
 }
 
+// double *Matrix::operator[](int row) {
+//   if (row < 0 || row >= rows_) {
+//     throw std::out_of_range("Invalid row index");
+//   }
+//   return matrix_[row];
+// }
+
+// const double *Matrix::operator[](int row) const {
+//     if (row < 0 || row >= rows_) {
+//     throw std::out_of_range("Invalid row index");
+//   }
+//   return matrix_[row];
+// }
+
 Matrix Matrix::operator*(const Matrix &other) const noexcept {
   Matrix new_object(*this);
   new_object *= other;
@@ -343,6 +357,10 @@ Matrix &Matrix::operator=(Matrix &&other) noexcept {
   }
 
   return *this;
+}
+
+Matrix operator*(const double num, const Matrix& matrix) {
+  return matrix * num;
 }
 
 std::ostream &operator<<(std::ostream &os, const Matrix &other) {

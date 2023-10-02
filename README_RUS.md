@@ -46,7 +46,7 @@ throw std::invalid_argument("No correct")
 class Matrix {...};
 ```
 
-Класс находится в оболочек math
+Класс находится в оболочки math
 
 ```cpp
 namespace math {

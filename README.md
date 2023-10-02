@@ -3,7 +3,7 @@
 ---
 
 Matrices in C++. Using an object-oriented approach. By [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html )
-This project was made with the aim of creating libraries for studying oop, where there will be operations for working with matrices.
+This project was made with the aim of creating libraries, studying OOP. In this project, various operations for working with matrices have been created
 
 ---
 

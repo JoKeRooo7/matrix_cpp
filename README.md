@@ -311,7 +311,7 @@ int main() {
 }
 ```
 
-One of the fastest algorithms is used - the Gaus algorithm.
+One of the fastest algorithms is used - finding the determinant by the Gaus method.
 
 ---
 

@@ -119,7 +119,6 @@ void Matrix::MulMatrix(const Matrix &other) {
       }
     }
   }
-  Clear();
   *this = result;
 }
 

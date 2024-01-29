@@ -9,7 +9,7 @@ protected:
   math::Matrix obj_two;   // 2x2
   math::Matrix obj_three; // 3x3
   math::Matrix obj_four;  // 4x4
-  math::Matrix obj_five;  // 5x6
+  math::Matrix obj_five;  // 5x5
 
   MatrixTests()
       : obj_one(1, 1), obj_two(2, 2), obj_three(3, 3), obj_four(4, 4),
